@@ -8,7 +8,6 @@ import '@/css/styles.css';
 import '@/components/keenicons/assets/styles.css';
 import { Metadata } from 'next';
 import { ModulesProvider } from '@/providers/modules-provider';
-import { QueryProvider } from '@/providers/query-provider';
 import { ThemeProvider } from '@/providers/theme-provider';
 import { ReduxProvider } from '@/providers/redux-provider';
 
@@ -35,18 +34,16 @@ export default async function RootLayout({
         )}
       >
         <ReduxProvider>
-          <QueryProvider>
-              <SettingsProvider>
-                <ThemeProvider>
-                  <TooltipsProvider>
-                    <ModulesProvider>
-                      <Suspense>{children}</Suspense>
-                      <Toaster />
-                    </ModulesProvider>
-                  </TooltipsProvider>
-                </ThemeProvider>
-              </SettingsProvider>
-          </QueryProvider>
+          <SettingsProvider>
+            <ThemeProvider>
+              <TooltipsProvider>
+                <ModulesProvider>
+                  <Suspense>{children}</Suspense>
+                  <Toaster />
+                </ModulesProvider>
+              </TooltipsProvider>
+            </ThemeProvider>
+          </SettingsProvider>
         </ReduxProvider>
       </body>
     </html>
