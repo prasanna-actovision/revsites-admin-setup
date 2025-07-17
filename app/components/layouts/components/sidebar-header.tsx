@@ -22,24 +22,24 @@ export function SidebarHeader() {
       <Link href="/">
         <div className="dark:hidden">
           <img
-            src={toAbsoluteUrl('/media/app/default-logo.svg')}
+            src={toAbsoluteUrl('/assets/default-logo.png')}
             className="default-logo h-[22px] max-w-none"
             alt="Default Logo"
           />
           <img
-            src={toAbsoluteUrl('/media/app/mini-logo.svg')}
+            src={toAbsoluteUrl('/assets/mini-logo.png')}
             className="small-logo h-[22px] max-w-none"
             alt="Mini Logo"
           />
         </div>
         <div className="hidden dark:block">
           <img
-            src={toAbsoluteUrl('/media/app/default-logo-dark.svg')}
+            src={toAbsoluteUrl('/assets/default-logo-dark.png')}
             className="default-logo h-[22px] max-w-none"
             alt="Default Dark Logo"
           />
           <img
-            src={toAbsoluteUrl('/media/app/mini-logo.svg')}
+            src={toAbsoluteUrl('/assets/mini-logo.png')}
             className="small-logo h-[22px] max-w-none"
             alt="Mini Logo"
           />

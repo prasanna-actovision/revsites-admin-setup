@@ -1,4 +1,5 @@
 import {
+  FolderKanban,
   AlertCircle,
   Award,
   Badge,
@@ -64,6 +65,13 @@ export const MENU_SIDEBAR: MenuConfig = [
     ],
   },
   { heading: 'User' },
+  {
+    title: 'Projects',
+    icon: FolderKanban,
+    children: [
+      { title: 'My Revsites', path: '/mysites' },
+    ]
+  },
   {
     title: 'Public Profile',
     icon: UserCircle,

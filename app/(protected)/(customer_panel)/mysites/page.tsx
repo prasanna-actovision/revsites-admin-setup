@@ -1,0 +1,51 @@
+'use client';
+
+import { Fragment } from 'react';
+import { DropdownMenu9 } from '@/partials/dropdown-menu/dropdown-menu-9';
+import { Navbar, NavbarActions } from '@/partials/navbar/navbar';
+import {
+  EllipsisVertical,
+  Mail,
+  MapPin,
+  MessagesSquare,
+  Users,
+  Zap,
+} from 'lucide-react';
+import { toAbsoluteUrl } from '@/lib/helpers';
+import { Button } from '@/components/ui/button';
+import { Container } from '@/components/common/container';
+import { PageMenu } from '@/app/(protected)/public-profile/page-menu';
+import { Projects } from './components';
+
+export default function ProjectColumn2Page() {
+  const image = (
+    <img
+      src={toAbsoluteUrl('/media/avatars/300-1.png')}
+      className="rounded-full border-3 border-green-500 h-[100px] shrink-0"
+      alt="image"
+    />
+  );
+
+  return (
+    <Fragment>
+      <Container>
+        <Navbar>
+          <PageMenu />
+          <NavbarActions>
+            <Button> <Users /> Build New Revsite </Button>
+            <DropdownMenu9
+              trigger={
+                <Button variant="outline" mode="icon">
+                  <EllipsisVertical />
+                </Button>
+              }
+            />
+          </NavbarActions>
+        </Navbar>
+      </Container>
+      <Container>
+        <Projects />
+      </Container>
+    </Fragment>
+  );
+}

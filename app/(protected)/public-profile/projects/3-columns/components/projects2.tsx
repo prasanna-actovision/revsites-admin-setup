@@ -15,14 +15,14 @@ interface IProjects2Item {
   endDate?: string;
   status: {
     variant?:
-      | 'primary'
-      | 'destructive'
-      | 'secondary'
-      | 'info'
-      | 'success'
-      | 'warning'
-      | null
-      | undefined;
+    | 'primary'
+    | 'destructive'
+    | 'secondary'
+    | 'info'
+    | 'success'
+    | 'warning'
+    | null
+    | undefined;
     label: string;
   };
   progress: {
