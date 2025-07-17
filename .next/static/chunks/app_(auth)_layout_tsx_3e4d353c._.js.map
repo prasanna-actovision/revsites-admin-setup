@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/probi/Desktop/Proj/Github_codes/nextjs/app/%28auth%29/layout.tsx"],"sourcesContent":["'use client';\n\nimport { ReactNode } from 'react';\nimport { BrandedLayout } from './layouts/branded';\n\nexport default function Layout({ children }: { children: ReactNode }) {\n  return <ClassicLayout>{children}</ClassicLayout>;\n}\n"],"names":[],"mappings":";;;;AAAA;;AAKe,SAAS,OAAO,EAAE,QAAQ,EAA2B;IAClE,qBAAO,6LAAC;kBAAe;;;;;;AACzB;KAFwB","debugId":null}}]
+}
