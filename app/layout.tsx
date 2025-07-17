@@ -7,7 +7,6 @@ import { Toaster } from '@/components/ui/sonner';
 import '@/css/styles.css';
 import '@/components/keenicons/assets/styles.css';
 import { Metadata } from 'next';
-import { AuthProvider } from '@/providers/auth-provider';
 import { ModulesProvider } from '@/providers/modules-provider';
 import { QueryProvider } from '@/providers/query-provider';
 import { ThemeProvider } from '@/providers/theme-provider';
@@ -37,7 +36,6 @@ export default async function RootLayout({
       >
         <ReduxProvider>
           <QueryProvider>
-            <AuthProvider>
               <SettingsProvider>
                 <ThemeProvider>
                   <TooltipsProvider>
@@ -48,7 +46,6 @@ export default async function RootLayout({
                   </TooltipsProvider>
                 </ThemeProvider>
               </SettingsProvider>
-            </AuthProvider>
           </QueryProvider>
         </ReduxProvider>
       </body>

@@ -29,7 +29,7 @@ import {
 import { Switch } from '@/components/ui/switch';
 
 export function UserDropdownMenu({ trigger }: { trigger: ReactNode }) {
-  const { data: session } = useSession();
+  // const { data: session } = useSession();
   const { theme, setTheme } = useTheme();
 
   const handleThemeToggle = (checked: boolean) => {
@@ -41,7 +41,7 @@ export function UserDropdownMenu({ trigger }: { trigger: ReactNode }) {
       <DropdownMenuTrigger asChild>{trigger}</DropdownMenuTrigger>
       <DropdownMenuContent className="w-64" side="bottom" align="end">
         {/* Header */}
-        <div className="flex items-center justify-between p-3">
+        {/* <div className="flex items-center justify-between p-3">
           <div className="flex items-center gap-2">
             <img
               className="w-9 h-9 rounded-full border border-border"
@@ -66,7 +66,7 @@ export function UserDropdownMenu({ trigger }: { trigger: ReactNode }) {
           <Badge variant="primary" appearance="light" size="sm">
             Pro
           </Badge>
-        </div>
+        </div> */}
 
         <DropdownMenuSeparator />
 
